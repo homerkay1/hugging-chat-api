@@ -93,7 +93,7 @@ class ChatBot:
         '''
         response = self.session.post(self.hf_base_url + "/chat/settings", headers=self.get_headers(ref=False), cookies=self.get_cookies(), allow_redirects=True, data={
             "ethicsModalAccepted": "true",
-            "shareConversationsWithModelAuthors": "true",
+            "shareConversationsWithModelAuthors": "false",
             "ethicsModalAcceptedAt": "",
             "activeModel": str(self.active_model)
         })
